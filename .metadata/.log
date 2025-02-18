@@ -7757,3 +7757,11 @@ Java Model Exception: Error in Java Model (code 979): Invalid path: '/_20250218w
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 !SUBENTRY 1 org.eclipse.jdt.core 4 979 2025-02-18 11:46:36.656
 !MESSAGE Invalid path: '/_20250218web/src/main/webapp/Index.jsp'
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-02-18 12:16:15.922
+!MESSAGE An internal error occurred during: "Publishing to Tomcat v9.0 Server at localhost...".
+!STACK 0
+java.lang.IllegalStateException: Workspace is already closed or not ready yet. Consider tracking the org.eclipse.core.resources.IWorkspace service (using your favorite technique, e.g. Declarative Services, ServiceTracker, Blueprint, ...) instead of calling the static method here to prevent such issues!
+	at org.eclipse.core.resources.ResourcesPlugin.getWorkspace(ResourcesPlugin.java:498)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:349)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
