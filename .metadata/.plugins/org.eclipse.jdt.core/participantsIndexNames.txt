@@ -1,5 +1,3 @@
 INDEX VERSION 1.134
 C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2771227506.index
 \_20250218web\src\main\java
-C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3652379475.index
-\_20250217web\src\main\java

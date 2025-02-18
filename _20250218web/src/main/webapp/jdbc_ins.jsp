@@ -10,22 +10,14 @@
 <body>
 <%
 String URL = "jdbc:mysql://localhost:3306/spring5fs";
-String sql = "select * from dept;";
+String sql = "insert into dept(deptno, dname, loc) values (50, '영업', '서울');";
 Class.forName("com.mysql.cj.jdbc.Driver");
 out.println("드라이버 로딩 완료<br>");
 try(Connection conn = DriverManager.getConnection(URL, "root", "1234");
-	Statement stmt = conn.createStatement();
-	ResultSet rs = stmt.executeQuery(sql))
+	Statement stmt = conn.createStatement();)
 {
-	out.println("<table border = '1'>");
-	out.println("<tr><th>deptno</th><th>dname</th><th>loc</th></tr>");
-	while(rs.next()){
-		out.println("<tr>");
-		out.println("<td>" + rs.getString("deptno") + "</td>");
-		out.println("<td>" + rs.getString("dname") + "</td>");
-		out.println("<td>" + rs.getString("loc") + "</td>");
-		out.println("</tr>");
-	}
+	out.println("MySQL 접속 성공<br>");
+	stmt.executeUpdate(sql);
 } catch (Exception e){
 	e.printStackTrace();
 }
