@@ -2,12 +2,10 @@
     pageEncoding="UTF-8"%>
 <%@ page import  = "java.sql.*" %>
 <%
-String deptno = request.getParameter("deptno");
-String dname = request.getParameter("dname");
-String loc = request.getParameter("loc");
+String empno = request.getParameter("empno");
 
 String URL = "jdbc:mysql://localhost:3306/spring5fs";
-String sql = "insert into dept(deptno, dname, loc) values (" + deptno + ", '" + dname + "', '" + loc + "');";
+String sql = "delete from emp where empno ="+empno;
 Class.forName("com.mysql.cj.jdbc.Driver");
 try(Connection conn = DriverManager.getConnection(URL, "root", "1234");
 	Statement stmt = conn.createStatement();)
@@ -16,5 +14,5 @@ try(Connection conn = DriverManager.getConnection(URL, "root", "1234");
 } catch (Exception e){
 	e.printStackTrace();
 }
-response.sendRedirect("index.jsp");
+response.sendRedirect("main.jsp");
 %>

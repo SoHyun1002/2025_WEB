@@ -13,7 +13,7 @@ String sql = "select * from dept";
 <title>Dept</title>
 </head>
 <body>
-<a href="fromDept.jsp">dept 입력</a>
+<a href="formDept.jsp">dept 입력</a>
 <table border="1">
 <tr><th>deptno</th><th>dname</th><th>loc</th><th>del</th></tr>
 <%
@@ -23,7 +23,7 @@ try(Connection conn = DriverManager.getConnection(URL, "root", "1234");
 		while(rs.next()) { 
 %>
 <tr>
-<td><%= rs.getString("deptno") %></td><td><%= rs.getString("dname") %></td><td><%= rs.getString("loc") %></td>
+<td><a href="updFormDept.jsp"><%= rs.getString("deptno") %></td><td><%= rs.getString("dname") %></td><td><%= rs.getString("loc") %></td>
 <td><a href="deleteDept.jsp?deptno=<%= rs.getString("deptno") %>">삭제</a></td>
 </tr>
 <% 
