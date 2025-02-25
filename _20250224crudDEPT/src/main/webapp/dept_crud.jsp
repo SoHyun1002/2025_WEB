@@ -28,15 +28,15 @@
     <%
         // DB 연결 정보
         request.setCharacterEncoding("UTF-8");
-	    String jdbcUrl = "jdbc:mysql://" + System.getenv("MYSQL_HOST") + ":3306/" + System.getenv("MYSQL_DATABASE");
-	    String username = System.getenv("MYSQL_USER");
-	    String password = System.getenv("MYSQL_PASSWORD");
+//	    String jdbcUrl = "jdbc:mysql://" + System.getenv("MYSQL_HOST") + ":3306/" + System.getenv("MYSQL_DATABASE");
+//	    String username = System.getenv("MYSQL_USER");
+//	    String password = System.getenv("MYSQL_PASSWORD");
         
         Connection conn = null;
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection(jdbcUrl, username, password);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring5fs", "root", "1234");
             
             // CREATE 처리
             if (request.getParameter("action") != null && request.getParameter("action").equals("create")) {

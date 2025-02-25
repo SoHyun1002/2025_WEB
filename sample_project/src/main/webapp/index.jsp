@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -27,19 +28,25 @@
             </ul>
 
             <ul class="util">
-                <li><a href="contcat.jsp">Contact</a></li>
+                <li><a href="contact.jsp">Contact</a></li>
                 <li><a href="#">Help</a></li>
 <%
-if ((String)session.getAttribute("userId") != null) {          
-    // 로그인 상태일 때의 출력 
+    if ((String)session.getAttribute("userId") != null) {          
+        // 로그인 상태일 때의 출력 
 %>
-                <li><a href="login/login_main.jsp">Login</a></li>
+                <li><a href="login/logout.jsp"><%=session.getAttribute("userName") %>님 Logout</a></li>
+                <li><a href="member/member_update_form.jsp">회원정보수정</a></li>
 <%
-} else { 
-%> 
-                <li><a href="login/logout.jsp">Logout</a></li>
-<%  }  %>
-                <li><a href="member/member_join.jsp">Join</a></li>
+    } else {
+%>
+				<!--<li><a href="login/login_main.jsp">Login</a></li>  -->
+				<li><form action="login/login.jsp" method="post" class="login"> 
+            아이디:   <input type="text"     name="id">&nbsp;&nbsp;
+            비밀번호: <input type="password" name="pw">
+            <input type="submit" value="로그인">
+        </form></li>
+<%  } %>
+                <li><a href="member/member_join_form.jsp">Join</a></li>
                 <li><a href="#">Sitemap</a></li>
             </ul>
         </div>

@@ -16,7 +16,7 @@
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		try ( 
 		    Connection conn = DriverManager.getConnection(
-		    		"jdbc:mysql://localhost:3306/spring5fs", "root", "1234");
+		    		"jdbc:mysql://localhost:3306/jspdb", "root", "1234");
         Statement stmt = conn.createStatement();
             
         // 현재 로그인한 사용자 정보를 읽어옴

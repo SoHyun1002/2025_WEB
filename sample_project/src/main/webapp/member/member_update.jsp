@@ -8,7 +8,7 @@
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		try ( 
 		    Connection conn = DriverManager.getConnection(
-		    		"jdbc:mysql://localhost:3306/spring5fs", "root", "1234");
+		    		"jdbc:mysql://localhost:3306/jspdb", "root", "1234");
         Statement stmt = conn.createStatement();
     ) {
         // 회원 정보 양식에 입력된 값을 DB에 저장
@@ -42,3 +42,7 @@
 
 </body>
 </html>
+
+<% 
+	response.sendRedirect("../index.jsp");
+%>

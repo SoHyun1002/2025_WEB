@@ -6,7 +6,7 @@
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	try ( 
 	    Connection conn = DriverManager.getConnection(
-	    		"jdbc:mysql://localhost:3306/spring5fs", "root", "1234");
+	    		"jdbc:mysql://localhost:3306/jspdb", "root", "1234");
         Statement stmt = conn.createStatement();
             
             // 지정된 아이디와 비밀번호를 가진 레코드가 있는지 쿼리 
@@ -19,7 +19,7 @@
             session.setAttribute("userId",   rs.getString("id"  ));
             session.setAttribute("userName", rs.getString("name"));
                 
-            response.sendRedirect("login_main.jsp");   
+            response.sendRedirect("../index.jsp");   
             return;
         }
         
