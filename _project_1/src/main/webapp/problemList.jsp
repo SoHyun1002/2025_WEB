@@ -20,7 +20,7 @@
 
     <header>
         <div class="inner">
-            <h1><a href="#">백준</a></h1>
+            <h1><a href="main.jsp">백준</a></h1>
 
             <ul id="gnb">
                 <li><a href="problemList.jsp">문제</a></li>
@@ -41,11 +41,14 @@
             </ul>
         </div>
     </header>
-    <table>
-        <tr>
+    
+    <div class = "board-container">
+    <table class = "board-table">
+        <tr class = "board-table">
             <th>NO</th>
             <th>TITLE</th>
         </tr>
+        
         <%
         String jdbcUrl = "jdbc:mysql://localhost:3308/bjccp";
         String dbId = "sh";
@@ -80,6 +83,7 @@
         }
         %>
     </table>
+    </div>
     <br>
 
 </body>
