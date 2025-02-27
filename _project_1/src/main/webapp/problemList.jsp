@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기업형 웹 페이지</title>
+    <title>백준</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -70,7 +70,7 @@
                 %>
                 <tr>
                     <td><%=rs.getInt("NO")%></td>
-                    <td><a href="download.jsp?fileName=<%=rs.getString("TITLE")%>"><%=rs.getString("TITLE")%></a></td>
+                    <td><a href="problemView.jsp?NO=<%=rs.getInt("NO")%>"><%=rs.getString("TITLE")%></a></td>
                 </tr>
                 <%
             }
