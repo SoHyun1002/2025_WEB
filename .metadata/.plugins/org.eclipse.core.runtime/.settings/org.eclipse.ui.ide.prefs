@@ -1,6 +1,12 @@
 IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+<<<<<<< HEAD
 IMPORT_FILES_AND_FOLDERS_TYPE=23,1\:7,1
 eclipse.preferences.version=1
 platformState=1739344600094263
+=======
+IMPORT_FILES_AND_FOLDERS_TYPE=7,1
+eclipse.preferences.version=1
+platformState=1754637234109797
+>>>>>>> 08d5f58 (macOS Update)
 quickStart=false
 tipsAndTricks=true

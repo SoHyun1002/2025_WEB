@@ -1,4 +1,5 @@
 INDEX VERSION 1.134
+<<<<<<< HEAD
 C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3196314834.index
 \_20250226web\src\main\java
 C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\218442874.index
@@ -49,3 +50,7 @@ C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2944353448.ind
 \_project_1\src\main\java
 C:\_JSP2025\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4156988510.index
 \_20250220web\src\main\java
+=======
+/Users/choisohyun/_JSP2025/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2032231445.index
+/_project1/src/main/java
+>>>>>>> 08d5f58 (macOS Update)

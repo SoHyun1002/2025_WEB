@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.BndtoolsJAREditorTempFiles</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>temp/10000001/mysql-connector-j-9.2.0.jar</name>
+			<type>2</type>
+			<locationURI>jarf:///file:/Users/choisohyun/_JSP2025/_project1/src/main/webapp/WEB-INF/lib/mysql-connector-j-9.2.0.jar!/</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
