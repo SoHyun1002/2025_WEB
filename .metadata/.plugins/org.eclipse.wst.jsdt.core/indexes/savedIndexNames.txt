@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+/Users/choisohyun/_JSP2025/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-2337499399.index
-2266093335.index
-2807918237.index
-1552809160.index
-2032231445.index
-1364521725.index
-2706892631.index

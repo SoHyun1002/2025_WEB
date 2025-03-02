@@ -1,3 +1,0 @@
-INDEX VERSION 1.134
-/Users/choisohyun/_JSP2025/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2032231445.index
-/_project1/src/main/java
