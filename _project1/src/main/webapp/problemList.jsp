@@ -2,7 +2,13 @@
     pageEncoding="UTF-8"%>
 <%@ page import = "java.sql.*" %>
 <%@ page session="true" %> <!-- 세션을 사용할 수 있도록 설정 -->
-
+<%
+	
+    // 세션에서 사용자 정보를 가져오기
+    String userId = (String) session.getAttribute("ID");
+    String userName = (String) session.getAttribute("NAME");
+ 
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -28,15 +34,13 @@
             </ul>
 
             <ul class="util">
-                <% 
-                    // 세션에서 userId 가져오기
-                    String userId = (String) session.getAttribute("id");
+                 <% 
                     if (userId != null) { 
                 %>
-                    <li><a href="logout.jsp">로그아웃</a></li>
+                    <li><a href="logout.jsp"><%= userName %> | 로그아웃</a></li>
                 <% } else { %>
                     <li><a href="login.jsp">로그인</a></li>
-                    <li><a href="account.jsp">회원가입</a></li>
+                    <li><a href="join.jsp">회원가입</a></li>
                 <% } %>
             </ul>
         </div>
