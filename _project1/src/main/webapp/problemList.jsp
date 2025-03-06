@@ -30,7 +30,7 @@
 
             <ul id="gnb">
                 <li><a href="problemList.jsp">문제</a></li>
-                <li><a href="#">채점</a></li>
+                <li><a href="fileupload/fileList.jsp">채점</a></li>
             </ul>
 
             <ul class="util">
