@@ -37,8 +37,8 @@ String userName = (String) session.getAttribute("NAME");
 				<%
 				} else {
 				%>
-				<li><a href="login.jsp">로그인</a></li>
-				<li><a href="join.jsp">회원가입</a></li>
+				<li><a href="../login.jsp">로그인</a></li>
+				<li><a href="../join.jsp">회원가입</a></li>
 				<%
 				}
 				%>
@@ -46,15 +46,17 @@ String userName = (String) session.getAttribute("NAME");
 		</div>
 	</header>
 	
-	<div class = "board-container">
-		<table class = "board-table">
-			<tr class = "board-table">
+	<div class = "container">
+		<table>
+		<thead>
+			<tr>
 				<th>파일명</th>
 				<th>설명</th>
 				<th>업로드 날짜</th>
 				<th>다운로드</th>
 				<th>삭제</th>
 			</tr>
+			</thead>
 			<%
 			String jdbcUrl = "jdbc:mysql://localhost:3308/bjccp";
 			String dbId = "sh";
@@ -74,6 +76,7 @@ String userName = (String) session.getAttribute("NAME");
 
 				while (rs.next()) {
 			%>
+			<tbody>
 			<tr>
 				<td><%=rs.getString("original_file_name")%></td>
 				<td><%=rs.getString("description")%></td>
@@ -83,6 +86,7 @@ String userName = (String) session.getAttribute("NAME");
 				<td><a href="#"
 					onclick="deleteFile('<%=rs.getString("file_name")%>')">삭제</a></td>
 			</tr>
+			</tbody>
 			<%
 			}
 			} catch (Exception e) {

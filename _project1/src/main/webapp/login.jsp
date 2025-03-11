@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>로그인</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="login-box">
         <h2>로그인</h2>
         <form action="loginAction.jsp" method="post">
-            <div class="form-group">
+            <div class="user-box">
                 <input type="text" name="ID" placeholder="아이디" required>
             </div>
-            <div class="form-group">
+            <div class="user-box">
                 <input type="password" name="PASS" placeholder="비밀번호" required>
             </div>
             <button type="submit">로그인</button>
@@ -21,4 +21,4 @@
         </form>
     </div>
 </body>
-</html> 
+</html>
